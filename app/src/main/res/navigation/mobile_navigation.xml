@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.komaristyi.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ru.mirea.komaristyi.mireaproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="ru.mirea.komaristyi.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_currency"
+        android:name="ru.mirea.komaristyi.mireaproject.CurrencyFragment"
+        android:label="@string/menu_currency"
+        tools:layout="@layout/fragment_currency" />
+
+    <fragment
+        android:id="@+id/nav_webview"
+        android:name="ru.mirea.komaristyi.mireaproject.WebViewFragment"
+        android:label="WebView"
+        tools:layout="@layout/fragment_web_view" />
+
+    <activity
+        android:id="@+id/nav_audiorecord"
+        android:name="ru.mirea.komaristyi.mireaproject.AudioRecord"
+        android:label="WebView"
+        tools:layout="@layout/fragment_audio_record" />
+
+    <activity
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.komaristyi.mireaproject.Compass"
+        android:label="WebView"
+        tools:layout="@layout/activity_compass" />
+
+    <activity
+        android:id="@+id/nav_photo"
+        android:name="ru.mirea.komaristyi.mireaproject.Photo"
+        android:label="WebView"
+        tools:layout="@layout/activity_photo" />
+
+    <activity
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.komaristyi.mireaproject.ProfileActivity"
+        android:label="Profile"
+        tools:layout="@layout/activity_profile" />
+
+</navigation>
